@@ -61,8 +61,7 @@ class App extends React.Component {
       } catch (e) {
           new_output = "'" + e.toString() + "'";
       }
-
-      //sarray.foreach((item)=>{new_output = new_output + item.toString() + "\r\n";});
+      
       let color_selection = "black";
 
       if(output.includes("positive")) {
