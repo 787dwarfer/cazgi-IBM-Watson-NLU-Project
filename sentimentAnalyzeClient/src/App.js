@@ -50,10 +50,9 @@ class App extends React.Component {
 
       this.setState({sentimentOutput:response.data});
       let output = response.data;
-      let rdata = new String(output);
+      let rdata = output;
       rdata = rdata.replaceAll("'","");
 
-      let sarray = rdata.split(",");
       let new_output = "";
       try {
         new_output = rdata;
